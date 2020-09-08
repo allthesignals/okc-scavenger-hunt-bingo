@@ -1,5 +1,9 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<div class="ui grid">
+  {{#each (array 1 2 3 4 5) as |row|}}
+    {{#each (array 1 2 3 4 5) as |row|}}
+      <div class="three wide column">lol</div>
+    {{/each}}
+  {{/each}}
+</div>
 
 {{outlet}}
